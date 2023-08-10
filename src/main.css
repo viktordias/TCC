@@ -146,5 +146,27 @@ section{
 }
 
 .section{
+  display: block;
   text-align: center;
+}
+
+.section h2{
+  text-align: center;
+}
+
+.mnemonicos-operaçoesLeft{
+  display: block;
+  text-align: left;
+  margin-left: 30%;
+}
+
+.mnemonicos-operaçoesCenter{
+  display: block;
+  text-align: center;
+}
+
+.mnemonicos-operaçoesRight{
+  display: block;
+  text-align: right;
+  margin-right: 30%;
 }
