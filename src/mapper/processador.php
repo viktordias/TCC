@@ -1,8 +1,8 @@
 <?php
-class Registrador{ 
-    public $id;
-    public $valor;
-
+class nucleo{ 
+    public $Estado;
+    public $AC;
+    public $PC;
 }   
 
 class instrucoes{
@@ -10,15 +10,9 @@ class instrucoes{
     public $minemonico;
 }
 
-class Ap{
-    public $PC;
-   
-}
 
-class Ac{
-    public $AC;
-    public $acessos;
-    public $Contador;
+class memoria extends instrucoes{
+    public $dado[][] ;
 }
 
 ?>
