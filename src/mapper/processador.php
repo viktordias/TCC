@@ -12,7 +12,7 @@ class instrucoes{
 
 
 class memoria extends instrucoes{
-    public $dado[][] ;
+    public $dado ;
 }
 
 ?>
