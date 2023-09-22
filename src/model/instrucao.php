@@ -16,30 +16,41 @@ class instrucoes{
         $this->$operadorSecundario = $operadorSecundario;
     }
 
+    #Soma uma posiçao de memoria ao acumulador
     public function OPadd($ac ,
      $operadorPrimario , $operadorSecundario){
         return $this->operadorSecundario != NULL ?
          $operadorPrimario+ $operadorSecundario : $ac + $operadorPrimario ;
     }
 
+    #Memoria recebe o valor no acumulador
     public function OPsta($dado){
         return $dado;
     }
     
-    public function getCA(){
-        return $this->CA;
+    #acumulador recebe posiçao de memoria
+    public function OPlda($dado){
+        return $this->$dado;
     }
 
-    public function setAC(){
-        return $this->AC;
+    #acumulador recebe Men OR AC
+    public function OPor($AC , $DADO){
+        return $this->$DADO | $AC;
     }
 
-    public function setAP(){
-        return $this->AP;
+    #acumulador recebe Men AND AC
+    public function OPand($AC , $DADO){
+        return $this->$DADO & $AC;
     }
 
-    public function setCA(){
-        return $this->CA;
+    #complemento de 1 no AC
+    public function OPnot($dado){
+        return ~$dado;
+    }
+
+    #complemento de 1 no AC
+    public function OPjmp($dado){
+        return ~$dado;
     }
 
     public function decotificador(){

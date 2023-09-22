@@ -1,5 +1,9 @@
+
 <?php
+
+
 class nucleo{ 
+    
     public $CA;
     public $AC;
     public $AP;
@@ -40,8 +44,17 @@ class nucleo{
 
     }
     
-    public function lerPrograma(){
-        
+    public function lerPrograma($programa){
+        $split = [];
+
+        for ($i=0; $i < sizeof($programa); $i++) { 
+            # code...
+            $split.explode(" ",$programa[$i]);
+            for ($i=0;$i < sizeof($split); $i++) { 
+                # code...
+                print("split:" + $split[$i]);
+            }
+        }
     }
     public function lerDados(){
         
